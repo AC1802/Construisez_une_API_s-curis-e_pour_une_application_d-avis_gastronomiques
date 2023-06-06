@@ -4,6 +4,8 @@ const app = express();
 
 const mongoose = require('mongoose');
 
+const Sauce = require('./models/sauce');
+
 const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb+srv://alexiecantos:hWnqps8cD6q3e1Br@cluster0.ze0mbo8.mongodb.net/?retryWrites=true&w=majority',
