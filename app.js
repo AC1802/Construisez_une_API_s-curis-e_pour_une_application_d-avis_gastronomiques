@@ -13,6 +13,6 @@ mongoose.connect('mongodb+srv://alexiecantos:hWnqps8cD6q3e1Br@cluster0.ze0mbo8.m
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 
-app.use('/api/')
+app.use('/api/auth', userRoutes);
 
 module.exports = app;
